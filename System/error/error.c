@@ -33,6 +33,8 @@ void 	fncRefreshErrHistDisplay(void);
 USINT	*ptrErrFileData;
 void	fncWriteHist2File(void);
 
+added line 1
+
 void _INIT errorINIT( void )
 {
 BOOL	blnLoop;
