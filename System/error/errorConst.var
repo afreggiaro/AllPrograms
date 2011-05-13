@@ -1,0 +1,20 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Package: error
+ * File: errorConst.var
+ * Author: afreggiaro
+ * Created: November 09, 2010
+ *******************************************************************)
+VAR CONSTANT
+	conErrorDevice : STRING[15] := 'ERRDATA';
+	conErrorFileName : STRING[15] := 'Errors.csv';
+	conMaxDisplayErrors : USINT := 10;
+	conMaxErrDescriptionLen : USINT := 65;
+	conMaxErrLineLen : USINT := 105;
+	conMaxErrNumLen : USINT := 4;
+	conMaxErrTypeLen : USINT := 4;
+	conMaxMachTypeLen : USINT := 7;
+	conErrHistDevice : STRING[8] := 'ERRLOG';
+	conMaxNumErrHistFiles : USINT := 9;
+END_VAR

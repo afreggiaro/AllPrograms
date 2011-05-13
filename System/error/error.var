@@ -1,0 +1,75 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: errors
+ * File: errors.var
+ * Author: charles
+ * Created: June 30, 2008
+ ********************************************************************
+ * Local variables of program errors
+ ********************************************************************)
+VAR
+	blnWriteErrHistBusy : BOOL := FALSE;
+	blnErrHistFileDone : BOOL := FALSE;
+	strFileNum : STRING[10] := '';
+	strErrHistFileName : STRING[20] := '';
+	usiErrHistState : USINT := 0;
+	blnWriteHist2FileRq : BOOL := FALSE;
+	FHistClose : FileClose := (0);
+	FHistWrite : FileWrite := (0);
+	FHistCreate : FileCreate := (0);
+	FHistDelete : FileDelete := (0);
+	stErrHistFileInfo : fiFILE_INFO := (0);
+	FHistInfo : FileInfo := (0);
+	blnPrevErrorSet : BOOL := FALSE;
+	blnNextErrorSet : BOOL := FALSE;
+	intDisplayErrStartIndex : INT := 0;
+	uiTotalNumOfActiveErrors : UINT := 0;
+	blnNewError : BOOL := FALSE;
+	blnGotNewTimedErr : BOOL := FALSE;
+	fncGetTxtByTxtGrp : fncGetTextByTextGroup := (0);
+	uiNewDisplayIndex : UINT := 0;
+	uiErrInfoIndex : UINT := 0;
+	uiErrHistIndex : UINT := 0;
+	blnErrorHelpRq : BOOL := FALSE;
+	blnClearErrHistRq : BOOL := FALSE;
+	blnClearTimedErrors : BOOL := FALSE;
+	blnErrDecodeFailed : BOOL := FALSE;
+	blnErrFileError : ARRAY[0..30] OF BOOL := [31(FALSE)];
+	blnErrFileReadFailed : BOOL := FALSE;
+	blnErrLineValid : BOOL := FALSE;
+	blnFileOpenOk : BOOL := FALSE;
+	blnFileReadOk : BOOL := FALSE;
+	blnHistNextPage : BOOL := FALSE;
+	blnJumped : BOOL := FALSE;
+	blnHistBottom : BOOL := FALSE;
+	blnHistTop : BOOL := FALSE;
+	blnHistPrevPage : BOOL := FALSE;
+	blnSystemMenuChange : BOOL := FALSE;
+	blnTimedErrorRq : BOOL := FALSE;
+	ErrCycleTimer : TON;
+	ErrOld : ARRAY[0..conMaxNumErrors] OF BOOL := [conMaxNumErrors+1(FALSE)];
+	ErrTimer : TON;
+	FClose : FileClose;
+	FOpen : FileOpen;
+	FRead : FileRead;
+	intI : INT := 0;
+	stErrorDisplay : ErrorDisplay_typ := (0);
+	strErrHistDisplay : ARRAY[0..conNumDisplayHistErrors] OF STRING[conErrHistRecordLength] := [conNumDisplayHistErrors+1('')];
+	strErrNum : STRING[10] := '';
+	strLanguageCode : STRING[10] := '';
+	strMachType : STRING[10] := '';
+	strTempHistErr : STRING[conErrHistRecordLength] := '';
+	udiCharCounter : UDINT := 0;
+	uiCurErrHistDisplayIndex : UINT := 0;
+	uiCurErrNum : UINT := 0;
+	uiErrBoxIndex : UINT := 0;
+	uiErrDisplayIndex : UINT := 0;
+	uiErrIndex : UINT := 0;
+	uiLocalLastMenu : UINT := 0;
+	uiMaxDisplayIndex : UINT := 0;
+	uiNumDisplayErrors : UINT := 0;
+	uiSelectedDisErrIndex : UINT := 0;
+	uiTestNumber : UINT := 0;
+	usiBadChar : USINT := 0;
+END_VAR
