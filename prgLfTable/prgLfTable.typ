@@ -17,3 +17,5 @@ TYPE
 		In : LfTableMapIn_typ;
 	END_STRUCT;
 END_TYPE
+
+new line
