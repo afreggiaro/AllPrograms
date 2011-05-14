@@ -17,4 +17,6 @@ VAR
 	usiLfTableIndex : USINT := 0;
 	stStatus : prgStatus_typ := (0);
 	stLfTableMap : LfTableMap_typ := (0);
+this is new
+
 END_VAR
