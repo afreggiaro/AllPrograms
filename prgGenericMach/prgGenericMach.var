@@ -1,0 +1,20 @@
+(********************************************************************
+ * Program: prgGenericMach
+ * File: prgGenericMach.var
+ * Author: TonyF
+ * Created: September 30, 2010
+ ********************************************************************
+ * Local variables of program prgGenericMach
+ ********************************************************************)
+VAR
+	i : INT := 0;
+	usiGenericMachPrgIndex : USINT := 0;
+	strGenericMachIndex : STRING[10] := '';
+	stStatus : prgStatus_typ := (0);
+	stGenericMachMap : GenericMachMap_typ := (0);
+	usiGenericMachIndex : USINT := 0;
+	usiThisLineNumber : USINT := 0;
+	usiEntryMachIndex : USINT := 0;
+	usiExitMachIndex : USINT := 0;
+	usiThisMachIndex : USINT := 0;
+END_VAR
