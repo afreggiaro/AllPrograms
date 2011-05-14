@@ -14,4 +14,5 @@ TYPE
 		uiErrInfoIndex : ARRAY[0..conMaxDisplayErrors] OF UINT;
 		strErrorDisplay : ARRAY[0..conMaxDisplayErrors] OF STRING[90];
 	END_STRUCT;
+new line
 END_TYPE
