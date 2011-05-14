@@ -1,0 +1,20 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: prgLfTable
+ * File: prgLfTable.var
+ * Author: afreggiaro
+ * Created: August 05, 2010
+ ********************************************************************
+ * Local variables of program prgLfTable
+ ********************************************************************)
+VAR
+	i : INT := 0;
+	tmrReadyDelay : TON := (0);
+	usiThisMachIndex : USINT := 0;
+	usiLfTablePrgIndex : USINT := 0;
+	strLfTableIndex : STRING[10] := '';
+	usiLfTableIndex : USINT := 0;
+	stStatus : prgStatus_typ := (0);
+	stLfTableMap : LfTableMap_typ := (0);
+END_VAR
