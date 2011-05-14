@@ -18,3 +18,4 @@ VAR CONSTANT
 	conErrHistDevice : STRING[8] := 'ERRLOG';
 	conMaxNumErrHistFiles : USINT := 9;
 END_VAR
+est line
